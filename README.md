@@ -4,10 +4,9 @@ This project implements Image Steganography using the Least Significant Bit (LSB
 🧠 LSB Steganography – C Implementation
 📘 Overview
 
-This project implements LSB (Least Significant Bit) Image Steganography using the C programming language.
-It enables hiding secret data (such as text files) inside 24-bit BMP images without causing any visible distortion.
+This project implements LSB (Least Significant Bit) Image Steganography using the C programming language. It hides secret data (like text files) inside 24-bit BMP images without creating any visible distortion.
 
-The project demonstrates practical use of file handling, bitwise operations, and data security, following a clean and modular C design.
+The project demonstrates effective use of file handling, bitwise operations, and data-hiding concepts, following a clean and modular C design.
 
 ✨ Features
 
@@ -15,13 +14,13 @@ The project demonstrates practical use of file handling, bitwise operations, and
 
 🔓 Decode (extract) hidden data from the stego image
 
-🧩 Supports 24-bit uncompressed BMP format
+🧩 Supports uncompressed 24-bit BMP format
 
 ⚙️ Validates file formats and checks image capacity
 
-🧠 Maintains original image quality
+🧠 Maintains original image quality after encoding
 
-🪶 Provides detailed logs during encoding and decoding
+🪶 Shows detailed logs during encoding and decoding
 
 ⚙️ How to Compile and Run
 1️⃣ Clone the Repository
@@ -36,12 +35,14 @@ make
 4️⃣ Encode Mode (Hide Secret Data)
 ./a.out -e <source_image.bmp> <secret.txt> <stego_image.bmp>
 
+
 Example:
 
 ./a.out -e sample/input.bmp sample/secret.txt sample/stego.bmp
 
 5️⃣ Decode Mode (Extract Hidden Data)
 ./a.out -d <stego_image.bmp> <output.txt>
+
 
 Example:
 
@@ -65,22 +66,25 @@ LSB-Steganography-C-Implementation/
 
 🧮 Concept Behind LSB Steganography
 
-LSB steganography hides secret bits inside the least significant bits of pixel values.
-Because these bits contribute minimally to the pixel's visible color, the change is undetectable.
+LSB steganography hides secret bits inside the least significant bits of each pixel value.
+These bits have minimal effect on color, making the change invisible to the human eye.
 
 Example:
-
 Original Pixel: 10010110  
-Modified Pixel: 10010111  ← (1 secret bit embedded)
+Modified Pixel: 10010111   ← (1 secret bit embedded)
 
-This project performs reliable bit-level embedding and extraction, ensuring accurate recovery of the hidden file.
+
+This method ensures reliable embedding and extraction of data while preserving image quality.
 
 🔮 Future Enhancements
 
-Add encryption before embedding data
-Support PNG/JPEG formats
-Develop a GUI using C++/Python
-Add audio/video steganography
+Add encryption before embedding
+
+Support PNG and JPEG formats
+
+Develop a GUI using C++ or Python
+
+Extend to audio/video steganography
 
 👨‍💻 Author
 
