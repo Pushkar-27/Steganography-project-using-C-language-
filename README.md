@@ -23,8 +23,8 @@ The project demonstrates effective use of file handling, bitwise operations, and
 🪶 Shows detailed logs during encoding and decoding
 
 ⚙️ How to Compile and Run
+
 1️⃣ Clone the Repository
-git clone https://github.com/yourusername/LSB-Steganography-C-Implementation.git
 
 2️⃣ Navigate to the Project Directory
 cd LSB-Steganography-C-Implementation
