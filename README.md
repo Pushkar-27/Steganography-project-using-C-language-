@@ -48,22 +48,6 @@ Example:
 
 ./a.out -d sample/stego.bmp sample/output.txt
 
-📁 Project Structure
-LSB-Steganography-C-Implementation/
-│
-├── main.c
-├── encode.c
-├── decode.c
-├── types.h
-├── encode.h
-├── decode.h
-├── Makefile
-├── README.md
-└── sample/
-    ├── input.bmp
-    ├── secret.txt
-    └── stego.bmp
-
 🧮 Concept Behind LSB Steganography
 
 LSB steganography hides secret bits inside the least significant bits of each pixel value.
