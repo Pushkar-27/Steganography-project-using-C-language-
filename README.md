@@ -2,6 +2,7 @@
 This project implements Image Steganography using the Least Significant Bit (LSB) method in C. It hides a secret message inside an uncompressed BMP image without visible changes. The system supports encoding text into pixel data and decoding it back using bit-level manipulation.
 
 🧠 LSB Steganography – C Implementation
+
 📘 Overview
 
 This project implements LSB (Least Significant Bit) Image Steganography using the C programming language. It hides secret data (like text files) inside 24-bit BMP images without creating any visible distortion.
